@@ -762,3 +762,64 @@ html {
     border-radius: 8px 8px 0 0;
 }
 
+/* === NOVOS ESTILOS === */
+
+/* Botão "Ver todos os projetos" */
+.see-more-container {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.btn-see-more {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid transparent;
+}
+
+.btn-see-more:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.btn-see-more i {
+    font-size: 1.2rem;
+}
+
+/* Estilos para a página de projetos (projetos.html) */
+.projects-page {
+    padding: 120px 20px 80px;
+    background: #f8fafc;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+}
+
+/* Ajuste na imagem do projeto para usar a URL */
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
