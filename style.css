@@ -685,6 +685,9 @@ body {
     .section-title {
         font-size: 1.75rem;
     }
+    .project-image {
+        height: 140px;
+    }
 
     /* 
        A regra abaixo foi removida pois estava causando conflito.
