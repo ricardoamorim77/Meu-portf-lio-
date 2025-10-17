@@ -688,6 +688,25 @@ body {
     .project-image {
         height: 140px;
     }
+    .project-content{
+        padding: 0.8rem;
+    }
+    .project-content h3{
+        font-size: 1.1rem;
+    }
+    .project-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    .project-tech{
+        gap: 0.4rem;
+    }
+    .tech-tag{
+        font-size: 0.75rem;
+    }
+    .project-links{
+        font-size: 0.9rem;
+    }
 
     /* 
        A regra abaixo foi removida pois estava causando conflito.
