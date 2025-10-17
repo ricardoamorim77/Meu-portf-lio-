@@ -198,7 +198,7 @@ body {
 .social-link img {
     width: 40px;
     height: 40px;
-    
+
 }
 
 .whatsapp-link:hover {
@@ -621,9 +621,7 @@ body {
         gap: 1rem;
     }
 
-    /* ================================================================
-       ===> AQUI ESTÁ A CORREÇÃO DEFINITIVA PARA ORGANIZAR OS CARDS <===
-       ================================================================ */
+    
     .project-card {
         display: flex;
         flex-direction: column;
@@ -631,8 +629,11 @@ body {
     }
     /* ================================================================ */
     .project-image{
-        height: 120px;
+        height: 150px;
         flex-shrink: 0;
+    }
+    .projects .hide-on-mobile{
+        display: none;
     }
     .contact-content {
         grid-template-columns: 1fr;
