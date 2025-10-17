@@ -617,9 +617,23 @@ body {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
+    /* ================================================================
+       ===> AQUI ESTÁ A CORREÇÃO DEFINITIVA PARA ORGANIZAR OS CARDS <===
+       ================================================================ */
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /* ================================================================ */
+    .project-image{
+        height: 120px;
+        flex-shrink: 0;
+    }
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -627,6 +641,18 @@ body {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-whatsapp img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -660,11 +686,17 @@ body {
         font-size: 1.75rem;
     }
 
-    .skill-card,
-    .project-card {
-        margin: 0 15px;
-    }
+    /* 
+       A regra abaixo foi removida pois estava causando conflito.
+       O espaçamento agora é controlado pelo "gap" do .projects-grid.
+       .skill-card,
+       .project-card {
+           margin: 0 15px;
+       }
+    */
 }
+
+/* O resto do seu código (animações, etc.) que não precisa estar dentro de @media */
 
 /* Animações */
 @keyframes fadeInUp {
@@ -694,9 +726,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-/* Floating WhatsApp Button */
+/* Floating WhatsApp Button (Estilos Gerais) */
 .floating-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -720,24 +750,7 @@ html {
 .floating-whatsapp img {
     width: 45px;
     height: 45px;
-    
 }
-
-@media (max-width: 768px) {
-    .floating-whatsapp {
-        width: 50px;
-        height: 50px;
-        bottom: 15px;
-        right: 15px;
-    }
-
-    .floating-whatsapp img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-
 
 /* Project Images */
 .project-image img {
