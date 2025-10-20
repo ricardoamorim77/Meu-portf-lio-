@@ -670,8 +670,12 @@ body {
         height: 40px;
     }
 }
-
 @media (max-width: 480px) {
+    /* ================================================================ */
+    /* ESTILOS GERAIS PARA TELAS PEQUENAS (ATÉ 480px) */
+    /* ================================================================ */
+
+    /* --- Layout e Seções Principais --- */
     .container {
         padding: 0 15px;
     }
@@ -680,6 +684,11 @@ body {
         padding: 1rem 15px;
     }
 
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    /* --- Seção Hero (Página Inicial) --- */
     .hero {
         padding: 100px 15px 60px;
     }
@@ -697,49 +706,55 @@ body {
         height: 200px;
     }
 
-    .section-title {
-        font-size: 1.75rem;
+    /* --- Grade de Projetos (index.html e projetos.html) --- */
+    .projects-grid {
+        /* A regra principal: 1 coluna para garantir espaço e legibilidade */
+        grid-template-columns: 1fr;
+        gap: 2rem; /* Um bom espaçamento vertical entre os projetos */
     }
+
+    /* --- Conteúdo dos Cards de Projeto --- */
     .project-image {
-        height: 150px;
+        height: 180px; /* Um pouco mais de altura para a imagem, já que o card é largo */
     }
-    .project-content{
-        padding: 0.8rem;
+
+    .project-content {
+        padding: 1rem; /* Um bom padding interno */
     }
-    .project-content h3{
-        font-size: 1.1rem;
-        margin-bottom: 0..5rem;
+
+    .project-content h3 {
+        font-size: 1.2rem;
     }
+
     .project-content p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
-    .project-tech{
-        gap: 0.4rem;
-        flex-wrap: wrap;
+
+    .project-tech {
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
-    .projects-grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
+
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 4px 8px;
     }
-    .project-links{
+
+    .project-links {
         display: flex;
-        justify-content: space-between;
-        font-size: 0.8rem;
-        margin-top: 0.8rem;
-
-    }
-    .project-link{
-        white-space: nowrap;
-    }
-    .tech-tag{
-        font-size: 0.7rem;
-        padding: 3px 6px;
-
+        justify-content: space-around; /* Distribui bem os links */
+        align-items: center;
+        font-size: 1rem; /* Fonte legível */
+        margin-top: 1.5rem; /* Bom espaçamento acima dos links */
     }
     
+    .project-link {
+        white-space: nowrap; /* Garante que "Ver Projeto" não quebre a linha */
+    }
 }
+
+
 /* Animações */
 @keyframes fadeInUp {
     from {
