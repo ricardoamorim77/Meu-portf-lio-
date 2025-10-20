@@ -618,7 +618,10 @@ body {
 
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+    .projects-page .container{
+        padding: 0 20px;
     }
      .project-links{
         font-size: 0.85rem;
@@ -712,6 +715,10 @@ body {
     }
     .project-tech{
         gap: 0.4rem;
+    }
+    .projects-grid{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     .tech-tag{
         font-size: 0.75rem;
