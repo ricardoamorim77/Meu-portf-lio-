@@ -655,6 +655,15 @@ body {
         width: 40px;
         height: 40px;
     }
+    .links-projeto{
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+    }
+    .projeto h3{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
