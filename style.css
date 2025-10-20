@@ -582,9 +582,6 @@ body {
     .hamburger.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .section-title{
-        font-size: 2rem;
-    }
 
     .hero-content {
         grid-template-columns: 1fr;
@@ -618,15 +615,22 @@ body {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    .contact-content{
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    .projects-grid{
+
+    .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-
+     .project-links{
+        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        padding: 0 0.5rem;
+    }
+    .project-link {
+        white-space: nowrap;
+    }
 
     
     .project-card {
@@ -634,29 +638,9 @@ body {
         flex-direction: column;
         justify-content: space-between;
     }
-    .project-content{
-        padding: 1rem;
-    }
-    .project-content h3{
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        
-    }
-    .project-content p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-        margin-bottom: 1rem;
-
-    }
-    .project-links {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        font-size: 0.9rem;
-    }
     /* ================================================================ */
     .project-image{
-        height: 120px;
+        height: 150px;
         flex-shrink: 0;
     }
     .projects .hide-on-mobile{
@@ -682,7 +666,6 @@ body {
         width: 40px;
         height: 40px;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -715,7 +698,7 @@ body {
         font-size: 1.75rem;
     }
     .project-image {
-        height: 140px;
+        height: 150px;
     }
     .project-content{
         padding: 0.8rem;
@@ -725,7 +708,7 @@ body {
     }
     .project-content p {
         font-size: 0.85rem;
-        
+        line-height: 1.5;
     }
     .project-tech{
         gap: 0.4rem;
@@ -733,15 +716,7 @@ body {
     .tech-tag{
         font-size: 0.75rem;
     }
-    .project-links{
-        font-size: 0.9rem;
-    }
-
-   
 }
-
-/* O resto do seu código (animações, etc.) que não precisa estar dentro de @media */
-
 /* Animações */
 @keyframes fadeInUp {
     from {
