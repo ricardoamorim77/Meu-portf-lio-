@@ -708,21 +708,37 @@ body {
     }
     .project-content h3{
         font-size: 1.1rem;
+        margin-bottom: 0..5rem;
     }
     .project-content p {
         font-size: 0.85rem;
-        line-height: 1.5;
+        line-height: 1.4;
+        margin-bottom: 0.8rem;
     }
     .project-tech{
         gap: 0.4rem;
+        flex-wrap: wrap;
     }
     .projects-grid{
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    .project-links{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+
+    }
+    .project-link{
+        white-space: nowrap;
     }
     .tech-tag{
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        padding: 3px 6px;
+
     }
+    
 }
 /* Animações */
 @keyframes fadeInUp {
