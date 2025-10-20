@@ -582,6 +582,9 @@ body {
     .hamburger.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    .section-title{
+        font-size: 2rem;
+    }
 
     .hero-content {
         grid-template-columns: 1fr;
@@ -615,11 +618,15 @@ body {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-
-    .projects-grid {
+    .contact-content{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .projects-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
 
     
     .project-card {
@@ -627,9 +634,29 @@ body {
         flex-direction: column;
         justify-content: space-between;
     }
+    .project-content{
+        padding: 1rem;
+    }
+    .project-content h3{
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        
+    }
+    .project-content p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+
+    }
+    .project-links {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: 0.9rem;
+    }
     /* ================================================================ */
     .project-image{
-        height: 150px;
+        height: 120px;
         flex-shrink: 0;
     }
     .projects .hide-on-mobile{
@@ -655,15 +682,7 @@ body {
         width: 40px;
         height: 40px;
     }
-    .links-projeto{
-        display: flex;
-        justify-content: start;
-        gap: 20px;
-        align-items: center;
-    }
-    .projeto h3{
-        font-size: 1.5rem;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -706,7 +725,7 @@ body {
     }
     .project-content p {
         font-size: 0.85rem;
-        line-height: 1.5;
+        
     }
     .project-tech{
         gap: 0.4rem;
@@ -718,14 +737,7 @@ body {
         font-size: 0.9rem;
     }
 
-    /* 
-       A regra abaixo foi removida pois estava causando conflito.
-       O espaçamento agora é controlado pelo "gap" do .projects-grid.
-       .skill-card,
-       .project-card {
-           margin: 0 15px;
-       }
-    */
+   
 }
 
 /* O resto do seu código (animações, etc.) que não precisa estar dentro de @media */
