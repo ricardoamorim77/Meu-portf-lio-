@@ -655,7 +655,7 @@ body {
         font-size: 2rem;
     }
     .project-content p {
-        text-align: left;
+        text-align: justify;
     }
 }
 
