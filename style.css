@@ -551,7 +551,7 @@ body {
     min-height: 120px;
 }
 
-/* Footer */
+
 .footer {
     background: #1f2937;
     color: white;
@@ -654,14 +654,6 @@ body {
     .section-title {
         font-size: 2rem;
     }
-
-    .project-content p{
-        text-align: left;
-        -webkit-hyphens: none;
-        hyphens: none;
-    }
-    
-
 }
 
 @media (max-width: 480px) {
