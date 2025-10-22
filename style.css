@@ -656,6 +656,10 @@ body {
     }
     .project-content p {
         text-align: justify;
+        -moz-text-align-last: justify;
+        text-align-last: justify;
+        -webkit-hyphens: none;
+        hyphens: none;
     }
 }
 
