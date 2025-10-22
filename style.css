@@ -412,7 +412,7 @@ body {
     text-align: justify;
     -webkit-hyphens: auto;
     hyphens: auto;
-    text-rendering: optimizeLegibility;
+
 }
 
 .project-tech {
@@ -654,6 +654,14 @@ body {
     .section-title {
         font-size: 2rem;
     }
+
+    .project-content p{
+        text-align: left;
+        -webkit-hyphens: none;
+        hyphens: none;
+    }
+    
+
 }
 
 @media (max-width: 480px) {
