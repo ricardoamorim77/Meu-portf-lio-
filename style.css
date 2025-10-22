@@ -601,6 +601,17 @@ body {
     .btn {
         width: 200px;
     }
+    .btn-see-more{
+        white-space: nowrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .see-more-container {
+        padding: 0 15px;
+
+        
+    }
+    
 
     .image-container {
         width: 250px;
@@ -618,6 +629,10 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    .projects-grid .project-card:nth-child(3){
+        display: none;
+
     }
 
     .contact-content {
