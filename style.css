@@ -618,7 +618,7 @@ body {
         justify-content: center;
     }
     .see-more-container {
-        padding: 0 15px;
+        padding: 0 15px; 
 
         
     }
@@ -654,15 +654,11 @@ body {
     .section-title {
         font-size: 2rem;
     }
-    .project-content p {
-        text-align: justify;
-        -moz-text-align-last: justify;
-        text-align-last: justify;
-        -webkit-hyphens: none;
-        hyphens: none;
-    }
+    
+
 }
 
+ 
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
@@ -696,6 +692,10 @@ body {
     .skill-card,
     .project-card {
         margin: 0 15px;
+    }
+    .project-content p{
+        text-align: left;
+
     }
 }
 
