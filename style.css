@@ -653,6 +653,10 @@ body {
     .contact-info h3, .contact-info p {
         text-align: center;
     }
+    .contact-info h3 {
+        text-align: center;
+        margin-left: 0;
+    }
 
     .section-title {
         font-size: 2rem;
