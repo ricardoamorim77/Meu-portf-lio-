@@ -642,11 +642,23 @@ body {
         grid-template-columns: 1fr;
     }
     .project-content p {
-        word-spacing: -2px;
+        text-align: justify;
+        text-align-last: left;
+
+        
+        max-width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+
        
       
     }
-   
+/*    .project-content p::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+   */
     .projects-grid .project-card:nth-child(3){
         display: none;
 
