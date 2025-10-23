@@ -654,8 +654,14 @@ body {
         text-align: center;
     }
     .contact-info h3 {
-        text-align: center;
-        margin-left: 0;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .contact-info p{
+        text-align: center !important;
+        margin: 0 auto 1rem auto !important;
+        padding: 0 !important;
     }
 
     .section-title {
