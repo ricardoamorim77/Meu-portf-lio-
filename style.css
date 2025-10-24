@@ -641,6 +641,9 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    .hide-on-mobile{
+        display: none;
+    }
     .project-content p {
         text-align: left;
 
@@ -662,6 +665,9 @@ body {
         text-align: center !important;
         margin: 0 auto 1rem auto !important;
         padding: 0 !important;
+    }
+    .contact-details h4{
+        text-align: left !important;
     }
 
     .section-title {
